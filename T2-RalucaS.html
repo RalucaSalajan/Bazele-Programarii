@@ -2,23 +2,20 @@
   a = 10;
   b = 13;
   if (a > b) {
-    console.log("Numarul A este mai mare ca B");
+    console.log("Numarul" + a + " este mai mare decat" + b + ".");
   } else {
-    console.log("Numarul A nu este mai mare ca B");
+    console.log("Nu este indeplinita conditia " + a + ">" + b + ".");
   }
 
   masini = ["BMW", "Dacia", "Mercedes", "Lancia"];
-  for (i = 0; i < 1; i++) {
-    console.log("Masina cu numarul 1 este " + masini[0]);
-    console.log("Masina cu numarul 2 este " + masini[1]);
-    console.log("Masina cu numarul 3 este " + masini[2]);
-    console.log("Masina cu numarul 4 este " + masini[3]);
+  for (i = 0; i < 4; i++) {
+    console.log("Masina cu numarul" + (i + 1) + " este " + masini[i] + ".");
   }
 
-  function inmulltire(a, b) {
-    console.log("Inmultirea celor doi parametri este egala cu " + a * b + ".");
+  function produs(a, b) {
+    console.log("Produsul celor doua numere este egala cu " + a * b + ".");
   }
-  inmulltire(3, 8);
+  produs(3, 8);
 
   function salutPersoana(nume, sex) {
     if (sex === "f") {
@@ -28,4 +25,5 @@
     }
   }
   salutPersoana("Raluca", "f");
+  salutPersoana("Dan", "m");
 </script>
