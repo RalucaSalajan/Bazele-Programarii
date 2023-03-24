@@ -1,0 +1,57 @@
+<script>
+  //Length in a String
+
+  let lastNameLength = 0;
+  const lastName = "Raluca Salajan";
+
+  console.log((lastNameLength = lastName.length));
+
+  //Find the First Character in a String
+
+  let firstLetterOfLastName = "";
+
+  console.log((firstLetterOfLastName = lastName[0]));
+
+  // String Immutability
+
+  let myStr = "Jello World!!!";
+  console.log((myStr = "Hello World !!!"));
+
+  //Find the 3th Character in a String
+
+  var name = "Raluca";
+  console.log((thirdLetterOfname = name[2]));
+
+  //Bracket Notation to Find the Last Character in a String
+
+  console.log((lastLetterOfname = name[name.length - 1]));
+
+  //Word Blanks - missing pieces
+  var myNoun = "dog";
+  var myAdjective = "big";
+  var myVerb = "ran";
+  var myAdverb = "quickly";
+
+  var wordBlanks =
+    "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+
+  console.log(wordBlanks);
+
+  //Access Multi-Dimensional Arrays With Indexes
+  var myArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [[10, 11, 12], 13, 14],
+  ];
+  var myData1 = myArray[2][1];
+  console.log(myData1);
+
+  //Manipulate Arrays With push Method
+
+  const myArray1 = [
+    ["John", 23],
+    ["cat", 2],
+  ];
+  console.log(myArray1.push(["dog", 3]));
+</script>
